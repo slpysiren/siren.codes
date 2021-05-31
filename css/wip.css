@@ -1,0 +1,64 @@
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica";
+  background: linear-gradient(90deg, #fd8653, #53499d, #61e686);
+  background-size: 250% 250%;
+	animation: gradient 100s ease-in-out infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#container {
+  color: #BED0E4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+#content {
+  z-index: 10;
+  text-align: center;
+  background-color: #1B1D1B;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 1px #1B1D1B;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.text-wrap h1 {
+  font-size: 52px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-wrap p {
+  font-size: 22px;
+}
+/* 
+#container p {
+  margin: 0;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) } */
+
